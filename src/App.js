@@ -2,10 +2,16 @@ import './App.css';
 
 // Components
 import Header from './components/Header';
+import GameRatingList from './components/GameRatingList';
 
 function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <GameRatingList />
+    </>
+
+
   );
 }
 

@@ -11,16 +11,22 @@ function GameRatingList() {
     return <p>No game rating yet</p>
   }
   return (
-    gameRating.map((item) => {
-     return <motion.div
-     key={item.id}
-     initial={{ opacity: 0 }}
-     animate={{ opacity: 1 }}
-     exit={{opacity:0}}
- > 
-      <GameRatingItem key={item.id} item={item} /> 
-       </motion.div> 
-     })
+    <div>
+      <AnimatePresence>
+        {gameRating.map((item) => {
+          return <motion.div
+            key={item.id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <GameRatingItem key={item.id} item={item} />
+          </motion.div>
+        })} 
+      </AnimatePresence>
+      
+    </div>
+    
     
 
   )

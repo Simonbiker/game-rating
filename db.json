@@ -1,22 +1,22 @@
 {
   "gameRating": [
-      {
-          "id": 1,
-          "rating": 10,
-          "title": "Skyrim",
-          "text": "This is skyrim review from db json file"
-        },
-        {
-          "id": 2,
-          "rating": 8,
-          "title": "fallout",
-          "text": "This is fallout review from db json file"
-        },
-        {
-          "id": 3,
-          "rating": 8,
-          "title": "call of duty",
-          "text": "This is call of duty review from db json file"
-        }
+    {
+      "id": 1,
+      "rating": 10,
+      "title": "Skyrim",
+      "text": "This is skyrim review from db json file"
+    },
+    {
+      "id": 2,
+      "rating": 8,
+      "title": "fallout",
+      "text": "This is fallout review from db json file"
+    },
+    {
+      "title": "Call of duty",
+      "text": "A very big shooter game.",
+      "rating": 10,
+      "id": 3
+    }
   ]
 }

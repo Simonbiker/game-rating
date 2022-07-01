@@ -15,7 +15,7 @@ export const GameRatingProvider = ({ children }) => {
 
     // Fetch feedback
     const fetchGameRating = async () => {
-        const response = await fetch('/gameRating')
+        const response = await fetch('/gameRating?_sort=id&_order=desc')
         const data = await response.json()
         setGameRating(data)
         setIsLoading(false)

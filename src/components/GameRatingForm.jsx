@@ -81,12 +81,20 @@ function GameRatingForm() {
               <RatingSelector select={ (rating) => setRating(rating)} />
               <div>
                   <div className='flex flex-col'>
-                    <input className='p-3 space-y-2 mb-3 rounded-md' onChange={titleChange} type="text" placeholder='Title of the Game' value={title} />
-                  <input className='p-3 space-y-2 mb-3 rounded-md' onChange={handleTextChange} type="text" placeholder='Write a review'
-                  value={text}/>  
+                      <input className='p-3 space-y-2 mb-3 rounded-md'
+                          onChange={titleChange}
+                          type="text"
+                          placeholder='Title of the Game' value={title} />
+                      <input className='p-3 space-y-2 mb-3 rounded-md'
+                          onChange={handleTextChange}
+                          type="text"
+                          placeholder='Write a review' value={text} />  
                   </div>
                   
-                  <button className='px-4 py-4 rounded-lg text-sm text-white bg-blue' type='submit' >Submit</button>
+                  <button className='px-4 py-4 rounded-lg text-sm 
+                  text-white bg-blue hover:opacity-50' type='submit'>
+                      Submit
+                  </button>
               </div>
               {titleMessage && <div>{ titleMessage}</div>}
               {message && <div>{ message}</div>}

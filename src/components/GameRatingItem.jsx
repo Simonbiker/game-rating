@@ -12,7 +12,7 @@ function GameRatingItem({ item }) {
       <Card>
         <h3 className='text-center text-2xl'>{item.title}</h3>
         <div className='flex fel-col justify-between md:m-5'>
-          <div className='flex rounded-full bg-blue text-white justify-center w-8 h-8 text-lg'>
+          <div className='flex rounded-full bg-blue text-white justify-center w-7 h-7 text-lg'>
             {item.rating}
           </div>
           <div className='flex flex-row-reverse space-x-4 space-x-reverse '>
